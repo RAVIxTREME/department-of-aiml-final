@@ -1,0 +1,456 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #f5f1e8;
+    color: #2b2b2b;
+    line-height: 1.7;
+}
+
+
+.top-bar {
+    background-color: #14315c;
+    color: #f5f1e8;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.top-bar .iner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top-bar a {
+    color: #f5f1e8;
+    text-decoration: none;
+}
+
+
+header {
+    background-color: #ffffff;
+    
+    padding: 24px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.institute-name h1 {
+    font-size: 26px;
+    color: #14315c;
+    letter-spacing: 0.5px;
+}
+
+.institute-name p {
+    font-size: 15px;
+    color: #555;
+    font-style: italic;
+}
+
+
+nav {
+    background-color: #e4e4e6;
+
+    border-top: 4px solid #b8860b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #574e4e;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+nav ul li:first-child a {
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+nav ul li a:hover {
+    background-color: #c7c5c6;
+}
+
+/*  BANNER  */
+.banner {
+    /* background-color: #114fb5; */
+    background-image: url(images/mainbanner.jpg);
+    background-size: cover;
+    color: #e0eee4;
+    text-align: center;
+    padding: 70px 20px;
+    border-bottom: 5px solid #b8860b;
+}
+
+.banner h2 {
+    font-size: 38px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.banner p {
+    font-size: 18px;
+    font-style: italic;
+    color: #9f9f96;
+}
+
+.banner .tagline {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 8px 28px;
+    border: 1px solid #7fb928;
+    color: #d0cabd;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Layout */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    color: #14315c;
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px double #b8860b;
+}
+
+.section-title p {
+    margin-top: 10px;
+    color: #777;
+    font-style: italic;
+}
+
+/*  about  */
+.about-content {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1 1 55%;
+}
+
+.about-text p {
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.about-box {
+    flex: 1 1 35%;
+    background-color: #fdfaf3;
+    border: 1px solid #d9d2bd;
+    border-top: 5px solid #8a1f2d;
+    padding: 22px;
+}
+
+.about-box h3 {
+    color: #8a1f2d;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.about-box ul {
+    list-style: none;
+}
+
+.about-box ul li {
+    padding: 7px 0;
+    border-bottom: 1px dashed #d9d2bd;
+    font-size: 14.5px;
+}
+
+.about-box ul li strong {
+    color: #14315c;
+}
+
+/*  Photo Gallery  */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 300px;
+    max-width: 330px;
+    background-color: #ffffff;
+    border: 1px solid #d9d2bd;
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #d9d2bd;
+    display: block;
+}
+
+.gallery-item p {
+    padding: 10px 4px 4px;
+    font-size: 14px;
+    color: #14315c;
+    font-style: italic;
+}
+.link234 {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 6px 14px;
+    background-color: #14315c1b;
+    color: #1f1f1fa7;
+    text-decoration: none;
+    font-size: 13.5px;
+    border-radius: 3px;
+    border: 1px solid hsla(216, 90%, 45%, 0.201);
+    font-family : "impact";
+}
+/* vision mission  */
+.vm-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.vm-card {
+    flex: 1 1 45%;
+    background-color: #fdfaf3;
+    border: 1px solid #d9d2bd;
+    border-top: 5px solid #14315c;
+    padding: 28px;
+}
+
+.vm-card.mission {
+    border-top-color: #b8860b;
+}
+
+.vm-card h3 {
+    color: #14315c;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.vm-card ul {
+    list-style: square inside;
+}
+
+.vm-card ul li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Curses */
+.course-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-card {
+    flex: 1 1 300px;
+    max-width: 340px;
+    background-color: #ffffff;
+    border: 1px solid #d9d2bd;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.course-card .course-head {
+    background-color: #14315c;
+    color: #ffffff;
+    padding: 16px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.course-card ul {
+    list-style: none;
+    padding: 18px 24px;
+    text-align: left;
+}
+
+.course-card ul li {
+    padding: 7px 0;
+    border-bottom: 1px dashed #d9d2bd;
+    font-size: 14.5px;
+}
+
+.course-card ul li strong {
+    color: #8a1f2d;
+}
+
+/* Faculty */
+.faculty-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.faculty-card {
+    flex: 1 1 300px;
+    max-width: 330px;
+    background-color: #fdfaf3;
+    border: 1px solid #d9d2bd;
+    text-align: center;
+    padding: 20px;
+}
+
+.faculty-card img {
+    width: 140px;
+    height: 160px;
+    object-fit: cover;
+    border: 3px solid #d9d2bd;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.faculty-card h3 {
+    color: #14315c;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.faculty-card .designation {
+    color: #8a1f2d;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.faculty-card p {
+    font-size: 13.5px;
+    color: #555;
+    text-align: center;
+}
+
+/* Facilities */
+.facility-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.facility-card {
+    flex: 1 1 300px;
+    max-width: 340px;
+    border: 1px solid #d9d2bd;
+    background-color: #fdfaf3;
+    padding: 12px;
+}
+
+.facility-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #d9d2bd;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.facility-card h3 {
+    color: #8a1f2d;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.facility-card p {
+    font-size: 14.5px;
+    text-align: justify;
+    padding: 0 10px 12px;
+}
+
+/* Achivements */
+.achievement-list {
+    list-style: none;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.achievement-list li {
+    background-color: #ffffff;
+    border-left: 5px solid #b8860b;
+    padding: 16px 22px;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+
+
+
+footer {
+    background-color: #14315c;
+    color: #d9d2bd;
+    text-align: center;
+    padding: 28px 0 18px;
+    border-top: 5px solid #b8860b;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+footer .foot-links a {
+    color: #f0d488;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 13.5px;
+}
+
+@media (max-width: 768px) {
+    .institute-name h1 { font-size: 20px; }
+    .banner h2 { font-size: 27px; }
+    nav ul li a { padding: 12px 14px; font-size: 13.5px; }
+    section { padding: 36px 0; }
+}
+
+/* .mainlogo img {
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 20% 0%;
+    /* border: 2px solid #383837; */
